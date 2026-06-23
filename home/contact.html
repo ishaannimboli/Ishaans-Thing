@@ -6,6 +6,7 @@
     <title>The Hollow Pages | Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="../assets/logo-icon.png">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <main>
@@ -41,14 +42,14 @@
                         <br>
                         <span>Phone Number</span>
                         <br>
-                        +1 (123) 456-7890
+                        0412 345 678
                     </td>
                     <td>
                         <img src="../assets/mailicon.png" alt="Email Icon">
                         <br>
                         <span>Email</span>
                         <br>
-                        musa.shakeel@education.nsw.gov.au
+                        contact@hollowpages.com
                     </td>
                 </tr>
                 <tr>
@@ -64,7 +65,7 @@
                         <br>
                         <span>Working Hours</span>
                         <br>
-                        <div style="text-align: left; padding: 0 25%; width: 50%;">
+                        <div style="text-align: left; padding: 0 25%; width: 100%;">
                             Mon-Fri: 8:45 AM - 3:10 PM
                             <br>
                             Sat-Sun: Closed
@@ -72,6 +73,42 @@
                     </td>
                 </tr>
             </table>
+            <br>
+            <h1 style="margin: 0;">Have an Inquiry?</h1>
+            <p>If you have any questions or would like to learn more about our services, please feel free to contact us using the form below.</p>
+            <table id="inquiry-form">
+                <tr bgcolor="#0E2FA8" style="height: 40px;">
+                    <th colspan="2"></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="First Name*" id="fname" name="fname" required>
+                        <p class="input-error" id="fname-error">‎ </p>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Last Name*" id="lname" name="lname" required>
+                        <p class="input-error" id="lname-error">‎ </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Mobile Number" id="mnumber" name="mnumber">
+                        <p class="input-error" id="mnumber-error">‎ </p>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Your Email Address*" id="email" name="email" required>
+                        <p class="input-error" id="email-error">‎ </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea placeholder="Message*" id="message" name="message" required></textarea>
+                        <p class="input-error" id="message-error">‎ </p>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="submit-button" onclick="submitInquiry()">Submit</button>
+            <p id="submit-output"></p>
         </div>
         <div class="footer">
             <div class="footer-first-row">
