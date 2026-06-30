@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Schoolbell&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 
-h1 {
-    font-family: 'Chango', sans-serif;
-}
-
-h2 {
-    font-family: 'Schoolbell', Calibri, sans-serif;
-}
-
-p {
-    font-family: 'Zalando Sans SemiExpanded', Calibri, sans-serif;
+body {
+    background-color: #fffee3;
+    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+    margin: 0;
 }
 
 .background-container {
@@ -30,90 +24,89 @@ p {
     z-index: -1;
 }
 
-/*
-.get-started-container {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    justify-content: center;
-    max-width: 640px;
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.glowing-book {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.glowing-book img {
     width: 100%;
-    padding-top: 300px;
-    padding: 32px 16px;
-    background-color: rgba(240, 255, 255, 0.773);
-    border-radius: 10px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    animation: floatAnimation 2s ease-in-out infinite;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.glowing-book img:hover, .glowing-book img:focus {
+    cursor: pointer;
 }
 
-#hollow {
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Chango', 'Zalando Sans SemiExpanded', Arial, sans-serif;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+.open-book {
+    position: relative;
+    z-index: 2;
+    width: 80vw;
+    height: 80vh;
+    margin: 5vh auto;
+    padding: 3rem;
+    background-color: #0E2FA8;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
 }
 
-#innocent-text {
-    font-family: 'Schoolbell', 'Zalando Sans SemiExpanded', Arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    transition: all 0.2s ease;
+.open-book.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-#innocent-text:hover,
-#innocent-text:focus-visible {
-    text-shadow: 0 2px 4px rgba(254, 59, 41, 0.5);
-    color: rgb(254, 59, 41);
+.open-book td {
+    padding: 40px;
+    font-size: clamp(2vh, 3.5vh, 4vh);
+    color: black;
+    line-height: 8vh;
 }
 
-.get-started-button {
-    display: inline-block;
-    margin-top: 5px;
-    padding: 10px 20px;
-    background-color: #ff402e;
-    color: white;
-    font-family: 'Schoolbell', 'Zalando Sans SemiExpanded', Arial, sans-serif;
-    font-size: 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0 12px 24px rgba(255, 64, 46, 0.4);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+.open-book td span {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s ease;
 }
 
-.get-started-button:hover,
-.get-started-button:focus-visible {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 32px rgba(255, 64, 46, 0.6);
+.open-book td span:hover {
+    color: #ffa719;
+    text-decoration-color: #ffa719;
 }
 
-#title {
-    transition: transform 0.2s ease, text-shadow 0.2s ease;
+.open-book td span.active {
+    color: #ffa719;
+    text-decoration-color: #ffa719;
 }
 
-#title:hover,
-#title:focus-visible {
-    transform: translateY(-2px);
+#fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 20;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
 }
 
-.warning-container {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: rgb(255, 200, 200);
-    border: 1px solid rgb(255, 150, 150);
-    border-radius: 5px;
-    height: 70px;
-    overflow: hidden;
-    transition: height 0.5s ease;
+#fade-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
 }
-
-.warning-container:hover,
-.warning-container:focus-within {
-    height: 150px;
-}
-*/
