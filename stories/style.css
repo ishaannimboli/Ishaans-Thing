@@ -10,10 +10,10 @@ body {
 .menu {
     display: flex;
     gap: 20px;
-    padding: 10px 150px;
-    width: 82.5%;
+    box-sizing: border-box;
+    padding: 10px 8vw;
+    width: 100%;
     background-color: rgb(14, 47, 167);
-    position: relative;
     z-index: 5;
 }
 
@@ -99,60 +99,78 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 150px;
 }
 
 .top-container {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: auto;
+    box-sizing: border-box;
+    height: 40vh;
     overflow: hidden;
-    z-index: 0;
+    gap: 5vw;
+    padding: 20px 8vw;
+    background-color: #fff0b8;
 }
 
-.top-image {
-    position: relative;
-    width: 100%;
+#top-image-container {
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    border-radius: 20px;
-    filter: blur(2px);
+    overflow: inherit;
 }
 
-.story-title {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 70px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 10px;
-    z-index: 1;
+#top-image-container img {
+    height: 100%;
+}
+
+#story-title {
+    font-size: 60px;
+    margin: 0;
 }
 
 .lyrics {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 8vw;
+    height: 600px;
+    overflow: hidden;
+    box-sizing: border-box;
     width: 100%;
-    text-align: left;
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 20px;
 }
 
-.lyrics span {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
+.lyrics img {
+    height: 100%;
 }
 
-#old-mice-lyrics {
-    text-align: right;
+.ad {
+    padding: 20px 8vw;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ad a {
+    text-decoration: none;
+}
+
+.true-meaning {
+    padding: 20px 8vw;
+}
+
+.true-meaning-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+    width: 100%;
+}
+
+.true-meaning-image-container {
+    max-width: 15%;
+}
+
+.true-meaning-image-container img{
+    width: 100%;
 }
 
 /* -------------------- Footer -------------------- */
@@ -160,7 +178,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100.05%;
+    width: 100%;
     padding: 20px 0;
     background-color: rgb(14, 47, 167);
     color: white;

@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&family=Schoolbell&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
 
+h1 {
+    font-family: 'Chango', sans-serif;
+}
+
+h2 {
+    font-family: 'Schoolbell', Calibri, sans-serif;
+}
+
+p {
+    font-family: 'Zalando Sans SemiExpanded', Calibri, sans-serif;
+}
+
 .background-container {
     position: relative;
     height: 100vh;
@@ -16,9 +28,9 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: blur(4px);
 }
 
+/*
 .get-started-container {
     position: relative;
     z-index: 1;
@@ -104,15 +116,4 @@
 .warning-container:focus-within {
     height: 150px;
 }
-
-h1 {
-    font-family: 'Chango', sans-serif;
-}
-
-h2 {
-    font-family: 'Schoolbell', Calibri, sans-serif;
-}
-
-p {
-    font-family: 'Zalando Sans SemiExpanded', Calibri, sans-serif;
-}
+*/

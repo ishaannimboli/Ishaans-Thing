@@ -17,22 +17,23 @@ table {
 }
 
 hr {
-    width: 125%;
+    width: 84%;
     border: none;
     height: 5px;
     border-radius: 2px;
     background-color: #c6c6a4;
-    margin: 40px 0;
+    margin: 0;
 }
 
 /* -------------------- Menu -------------------- */
 .menu {
+    position: relative;
     display: flex;
     gap: 20px;
-    padding: 10px 150px;
-    width: 82.5%;
+    box-sizing: border-box;
+    padding: 10px 8vw;
+    width: 100%;
     background-color: rgb(14, 47, 167);
-    position: relative;
     z-index: 5;
 }
 
@@ -88,7 +89,7 @@ hr {
   border-radius: 8px;
   visibility: hidden;
   transition: all 0.2s ease;
-  margin: -2px;
+  margin: 0;
 }
 
 .stories-dropdown-content a {
@@ -118,7 +119,7 @@ hr {
 .top-container {
     position: relative;
     display: inline-block;
-    width: 100.05%;
+    width: 100%;
     height: 400px;
     overflow: hidden;
     z-index: 0;
@@ -155,7 +156,6 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 200px;
 }
 
 .about-us {
@@ -163,6 +163,8 @@ hr {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 20px 8vw;
+    box-sizing: border-box;
 }
 
 #about-logo {
@@ -176,6 +178,9 @@ hr {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 20px 8vw;
+    background-color: #fff0b8;
+    box-sizing: border-box;
 }
 
 .team b {
@@ -183,60 +188,73 @@ hr {
 }
 
 .story-display {
+    width: 100%;
+    padding: 20px 8vw;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.displayed-stories {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    gap: 3vw;
 }
 
-.story-display table {
-    width: 100%;
-    border: 1px solid #c6c6a4;
-    border-radius: 20px;
+.story-container {
+    background-color: #E6EAFF;
     padding: 20px;
-    background-color: #e6eaff;
+    width: 30%;
+    border: solid 2px #0E2FA8;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
 }
 
-.story-display td {
-    padding: 10px;
+.story-container:hover, .story-container:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
 }
 
-.story-display td b {
-    font-size: 32px;
-}
-
-.story-display img {
+.displayed-stories img {
     width: 100%;
     height: 14em;
     border-radius: 20px;
     object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.story-display button {
-    margin-top: 20px;
+.displayed-stories h2 {
+    font-size: 25px;
+}
+
+.displayed-stories button {
     padding: 10px 20px;
     font-size: 20px;
     font: inherit;
     font-weight: bold;
+    color: white;
     background-color: rgb(14, 47, 167);
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-.story-display button a {
+.displayed-stories button a {
     color: white;
     text-decoration: none;
 }
 
-.story-display button:hover, .story-display button:focus-visible {
+.displayed-stories button:hover, .displayed-stories button:focus-visible {
     background-color: #ffa719;
 }
 
-.story1 {
-    margin-top: 40px;
-    border-radius: 20px;
+.reviews {
+    padding: 20px 8vw;
+    background-color: #fff0b8;
+    box-sizing: border-box;
 }
 
 .reviews td {
@@ -244,36 +262,48 @@ hr {
 }
 
 /* ---------- Contact Page ---------- */
-#contact-info {
+.contact-info {
+    width: 100%;
+    padding: 20px 8vw;
+    box-sizing: border-box;
+}
+
+#contact-table {
     width: 100%;
     border: 1px solid #c6c6a4;
     border-collapse: collapse;
 }
 
-#contact-info th {
+#contact-table th {
     padding: 10px;
     font-size: 28px;
     color: white;
 }
 
-#contact-info td {
+#contact-table td {
     padding: 20px;
     text-align: center;
     background-color: #f2f2f2;
     width: 50%;
 }
 
-#contact-info td img {
+#contact-table td img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
-#contact-info td span {
+#contact-table td span {
     display: block;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.inquiry-info {
+    width: 100%;
+    padding: 20px 8vw;
+    box-sizing: border-box;
 }
 
 #inquiry-form {
@@ -349,7 +379,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100.05%;
+    width: 100%;
     padding: 20px 0;
     background-color: rgb(14, 47, 167);
     color: white;

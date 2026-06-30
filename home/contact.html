@@ -30,85 +30,89 @@
             </div> 
         </div>
         <div class="main-content">
-            <h1 style="margin:0;">Contact Us</h1>
-            <p>If you have any questions or feedback, feel free to reach out to us!</p>
-            <table id="contact-info" border="1">
-                <tr>
-                    <th colspan="2" bgcolor="#0E2FA8">Get in touch with us!</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../assets/phoneicon.png" alt="Phone Icon">
-                        <br>
-                        <span>Phone Number</span>
-                        <br>
-                        0412 345 678
-                    </td>
-                    <td>
-                        <img src="../assets/mailicon.png" alt="Email Icon">
-                        <br>
-                        <span>Email</span>
-                        <br>
-                        contact@hollowpages.com
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../assets/locationicon.png" alt="Location Icon">
-                        <br>
-                        <span>Location</span>
-                        <br>
-                        110 Gilba Rd, Girraween NSW 2145
-                    </td>
-                    <td>
-                        <img src="../assets/clockicon.png" alt="Clock Icon">
-                        <br>
-                        <span>Working Hours</span>
-                        <br>
-                        <div style="text-align: left; padding: 0 25%; width: 100%;">
-                            Mon-Fri: 8:45 AM - 3:10 PM
+            <h1 style="margin: 20px 0;">Contact Us</h1>
+            <p style="margin: 0;">If you have any questions or feedback, feel free to reach out to us!</p>
+            <div class="contact-info">
+                <table id="contact-table" border="1">
+                    <tr>
+                        <th colspan="2" bgcolor="#0E2FA8">Get in touch with us!</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../assets/phoneicon.png" alt="Phone Icon">
                             <br>
-                            Sat-Sun: Closed
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                            <span>Phone Number</span>
+                            <br>
+                            0412 345 678
+                        </td>
+                        <td>
+                            <img src="../assets/mailicon.png" alt="Email Icon">
+                            <br>
+                            <span>Email</span>
+                            <br>
+                            contact@hollowpages.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../assets/locationicon.png" alt="Location Icon">
+                            <br>
+                            <span>Location</span>
+                            <br>
+                            110 Gilba Rd, Girraween NSW 2145
+                        </td>
+                        <td>
+                            <img src="../assets/clockicon.png" alt="Clock Icon">
+                            <br>
+                            <span>Working Hours</span>
+                            <br>
+                            <div style="text-align: left; padding: 0 25%; width: 100%;">
+                                Mon-Fri: 8:45 AM - 3:10 PM
+                                <br>
+                                Sat-Sun: Closed
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <br>
-            <h1 style="margin: 0;">Have an Inquiry?</h1>
-            <p>If you have any questions or would like to learn more about our services, please feel free to contact us using the form below.</p>
-            <table id="inquiry-form">
-                <tr bgcolor="#0E2FA8" style="height: 40px;">
-                    <th colspan="2"></th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="First Name*" id="fname" name="fname" required>
-                        <p class="input-error" id="fname-error">‎ </p>
-                    </td>
-                    <td>
-                        <input type="text" placeholder="Last Name*" id="lname" name="lname" required>
-                        <p class="input-error" id="lname-error">‎ </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" placeholder="Mobile Number" id="mnumber" name="mnumber">
-                        <p class="input-error" id="mnumber-error">‎ </p>
-                    </td>
-                    <td>
-                        <input type="email" placeholder="Your Email Address*" id="email" name="email" required>
-                        <p class="input-error" id="email-error">‎ </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <textarea placeholder="Message*" id="message" name="message" required></textarea>
-                        <p class="input-error" id="message-error">‎ </p>
-                    </td>
-                </tr>
-            </table>
-            <button type="submit" id="submit-button" onclick="submitInquiry()">Submit</button>
-            <p id="submit-output"></p>
+            <h1 style="margin: 20px 0;">Have an Inquiry?</h1>
+            <p style="margin-top: 0;">If you have any questions or would like to learn more about our services, please feel free to contact us using the form below.</p>
+            <div class="inquiry-info">
+                <table id="inquiry-form">
+                    <tr bgcolor="#0E2FA8" style="height: 40px;">
+                        <th colspan="2"></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="First Name*" id="fname" name="fname" required>
+                            <p class="input-error" id="fname-error">‎ </p>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Last Name*" id="lname" name="lname" required>
+                            <p class="input-error" id="lname-error">‎ </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Mobile Number" id="mnumber" name="mnumber">
+                            <p class="input-error" id="mnumber-error">‎ </p>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="Your Email Address*" id="email" name="email" required>
+                            <p class="input-error" id="email-error">‎ </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea placeholder="Message*" id="message" name="message" required></textarea>
+                            <p class="input-error" id="message-error">‎ </p>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit" id="submit-button" onclick="submitInquiry()">Submit</button>
+                <p id="submit-output"></p>
+            </div>
         </div>
         <div class="footer">
             <div class="footer-first-row">
