@@ -1,55 +1,133 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hollow Pages | The Muffin Man</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../assets/logo-icon.png">
-</head>
-<body>
-    <main>
-        <div class="menu">
-            <div class="left-side">
-                <a href="../index.html"><img id="menu-logo" src="../assets/logo-icon.png" alt="The Hollow Pages"></a>
-                <a id="menu-home-text" href="../home/index.html">The Hollow Pages</a>
+<!-- TALE I: THE MUFFIN MAN -->
+<section id="story-muffin" class="site-section story-page theme-muffin">
+    <div class="story-sidebar-layout left-ad-layout">
+        
+        <!-- Left Sidebar Ads -->
+        <aside class="sidebar-ad-col left-ad-bar">
+            <div class="sticky-ad-container">
+                <span class="sidebar-ad-label">ADVERTISEMENT</span>
+                <div class="sidebar-ad-box">
+                    <h5>Drury Lane Milling</h5>
+                    <p>Finest double-sifted wheat flour for costermongers and griddle bakers.</p>
+                    <span class="ad-action-btn">BUY BULK</span>
+                </div>
+                <div class="sidebar-ad-box">
+                    <h5>Royal Bell Foundry</h5>
+                    <p>Clear brass handbells. Guaranteed to draw custom before the watch arrives.</p>
+                    <span class="ad-action-btn">VIEW BELLS</span>
+                </div>
             </div>
-            <div class="right-side">
-                <a href="../home/index.html">Home</a>
-                <a href="../home/about.html">About</a>
-                <div class="stories-dropdown">
-                    <a class="stories-dropdown-button" href="../stories/stories.html">Stories</a>
-                    <div class="stories-dropdown-content">
-                        <a href="../stories/threeblindmice.html">Three Blind Mice</a>
-                        <a href="../stories/pumpkineater.html">Peter, Peter, Pumpkin Eater</a>
-                        <a href="../stories/muffinman.html">The Muffin Man</a>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="story-main-content">
+            
+            <!-- Top wireframe split: Image left, Title right -->
+            <div class="story-header-wireframe">
+                <div class="header-image-box">
+                    <img src="muffin.png" alt="Drury Lane Bakery Front" class="wireframe-story-banner">
+                </div>
+                <div class="header-title-box">
+                    <span class="story-chapter-tag">Volume I — Drury Lane</span>
+                    <h2 class="wireframe-story-title">The Muffin Man</h2>
+                    <p class="wireframe-story-subtitle">The Street Vendors of London's West End</p>
+                </div>
+            </div>
+
+            <div class="decorative-separator">
+                <span class="line"></span>
+                <span class="symbol"><i class="fa-solid fa-wheat-awn"></i></span>
+                <span class="line"></span>
+            </div>
+
+            <!-- Middle split: Lyrics left, Small logo right -->
+            <div class="story-middle-split">
+                <div class="lyrics-card-column">
+                    <h3 class="middle-title"><i class="fa-solid fa-music"></i> Rhyme Lyrics</h3>
+                    <div class="lyrics-text-block">
+                        <p class="lyrics-line font-italic">Do you know the Muffin man</p>
+                        <p class="lyrics-line font-italic">The Muffin man, the Muffin man</p>
+                        <p class="lyrics-line font-italic">Oh, do you know the Muffin man</p>
+                        <p class="lyrics-line font-italic">Who lives on Drury Lane?</p>
+                        <p class="lyrics-line font-italic">Oh yes, we know the Muffin man</p>
+                        <p class="lyrics-line font-italic">The Muffin man, the Muffin man</p>
+                        <p class="lyrics-line font-italic">Oh yes, we know the Muffin man</p>
+                        <p class="lyrics-line font-italic">Who lives on Drury Lane?</p>
+                        <p class="lyrics-line font-italic">Oh, we all know the Muffin man</p>
+                        <p class="lyrics-line font-italic">The Muffin Man, the Muffin man</p>
+                        <p class="lyrics-line font-italic">Oh, we all know the Muffin man</p>
+                        <p class="lyrics-line font-italic">Who lives on Drury Lane?</p>
                     </div>
                 </div>
-                <a href="../home/contact.html">Contact</a>
-            </div> 
-        </div>
-        <div class="footer">
-            <div class="footer-first-row">
-                <div class="footer-logo-container">
-                    <img id="footer-logo" src="../assets/logo-icon.png" alt="The Hollow Pages">
-                </div>
-                <p id="footer-logo-text">The Hollow Pages</p>
-                <div class="footer-table">
-                    <table>
-                        <tr>
-                            <td><a href="../home/index.html">Home</a></td>
-                            <td><a href="../home/about.html">About</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="../stories/stories.html">Stories</a></td>
-                            <td><a href="../home/contact.html">Contact</a></td>
-                        </tr>
-                    </table>
+                <div class="side-illustration-column">
+                    <div class="illustration-medallion">
+                        <svg viewBox="0 0 100 100">
+                            <rect x="25" y="30" width="50" height="50" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="50" cy="55" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="50" y1="43" x2="50" y2="30" stroke="currentColor" stroke-width="2"/>
+                            <path d="M35,30 L65,30" stroke="currentColor" stroke-width="3"/>
+                        </svg>
+                        <span>Drury Lane Cellar</span>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <p id="back-to-landing">Back to the <a href="../index.html">landing page?</a></p>
+
+            <!-- Video Section with ishaan.mp4 player -->
+            <div class="video-container-section">
+                <h3 class="video-section-title"><i class="fa-solid fa-film"></i> Archival Video Record</h3>
+                <div class="custom-video-player" id="video-muffin">
+                    <!-- Loaded ishaan.mp4 video -->
+                    <video src="ishaan.mp4" preload="metadata" playsinline class="video-element" style="width:100%; height:100%; object-fit:cover; display:block;"></video>
+                    <div class="video-poster" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('muffin.png');">
+                        <button class="video-play-btn" aria-label="Play Document Video"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <div class="video-control-bar">
+                        <button class="play-toggle-btn"><i class="fa-solid fa-play"></i></button>
+                        <div class="video-seek-track">
+                            <div class="video-seek-progress"></div>
+                        </div>
+                        <span class="video-time">0:00 / 0:00</span>
+                        <button class="volume-btn"><i class="fa-solid fa-volume-high"></i></button>
+                        <button class="fullscreen-btn"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom: Left True Meaning, Right Illustration -->
+            <div class="story-bottom-split">
+                <div class="true-meaning-text-column">
+                    <h3 class="bottom-title"><i class="fa-solid fa-book-open"></i> Historical Context & True Meaning</h3>
+                    <div class="meaning-paragraphs">
+                        <p>
+                            The first version of ‘The Muffin Man’ was recorded in a British manuscript circa 1820, which is preserved in the Bodleian Library at the University of Oxford. This is where the oldest documented variation of the rhyme derived from.
+                        </p>
+                        <p>
+                            One speculation of the story's deep meaning relates to an urban legend about a 16th-century serial killer named Frederic Thomas Lynwood (also known as the "Drury Lane Dicer"). It is widely circulated online that he lured up to 15 children into dark alleys using a muffin tied to a piece of string between 1589 and 1598. However, historical fact-checking proves this story is entirely fictional, originating from a satirical website called Uncyclopedia. There are no historical records of Lynwood’s existence or his alleged crimes.
+                        </p>
+                        <p>
+                            The actual history of the rhyme is rooted in Victorian England's working class and industrial London. During the 18th and 19th centuries, the "muffin man" was a common door-to-door street vendor who delivered fresh baked goods to families. Because many lower-class households lacked proper ovens or kitchens, they relied heavily on these street sellers for cheap, filling foods. The vendors would walk through neighbourhoods balanced with a heavy tray of English muffins on their heads, ringing a loud bell to announce their arrival to the community.
+                        </p>
+                        <p>
+                            The reference to Drury Lane anchors the rhyme to a real, highly populated thoroughfare bordering Covent Garden in London's West End. In the 19th century, Drury Lane was notorious for being a poverty-stricken slum filled with overpopulation, crime, and adult venues. Early historical accounts suggest the song may have originally been a stage song performed in local clubs before catching on in the 1820s as a children's game, where kids would hold hands in a circle and dance to gamify their harsh neighborhood environments.
+                        </p>
+                        <p>
+                            Furthermore, the social disruptions caused by these vendors eventually caught the attention of the British government. In the 1840s, the Parliament passed a statutory regulation commonly known as the <strong>Muffin Act</strong>. This legislation attempted to prohibit costermongers and street sellers from loudly ringing brass bells or beating drums early in the morning, as wealthy residents complained about the noise pollution. However, the legislation proved heavily ineffective. The muffin men largely ignored the legal fines and continued to ring their bells clandestinely, because their economic survival depended entirely on making their physical presence known to local households.
+                        </p>
+                    </div>
+                </div>
+                <div class="meaning-illustration-column">
+                    <div class="illustration-frame">
+                        <img src="muffin.png" alt="Muffin Man Iconography" class="medallion-img">
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </main>
-</body>
-</html>
+    </div>
+
+    <!-- Navigation Footer -->
+    <div class="story-footer-nav">
+        <a href="#home" class="back-home-btn nav-link" data-target="home"><i class="fa-solid fa-circle-chevron-left"></i> Return to Hearth</a>
+        <a href="#story-mice" class="next-story-btn nav-link" data-target="story-mice">Next Record: Three Blind Mice <i class="fa-solid fa-circle-chevron-right"></i></a>
+    </div>
+</section>
